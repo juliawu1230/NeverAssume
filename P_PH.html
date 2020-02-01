@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="PH.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Merriweather|Montserrat:100,100i,200,200i,300,300i,400,400i,500,600,700,800,900,900i|Parisienne|Quicksand|Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a18f7de081.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <title>Hungjiawu's web site</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('ul.list ul').hide();
+
+            $('ul.list > li > a').click(function () {
+                console.log($('ul.center'));
+                if ($('ul.center').is(':hidden')) {
+                    $('ul.center').slideDown(600);
+                } else {
+                    $('ul.center').slideUp(600);
+                }
+
+                //$(this).next().slideToggle(800);
+                //$(this).toggleClass('active');
+            });
+            $('.btn').click(function () {
+                console.log($('#collapseExample'));
+                $('#collapseExample').removeClass('collapsing');
+
+
+            });
+
+            $('.main.card1').click(function () {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 900);
+            });
+
+
+            $(window).scroll(function () { //視窗捲動的時候
+                $('.t1').css("transition:opacity 2s;opacity:0")
+                var sh = $(window).scrollTop();
+                if (sh > 250) {
+                    $('.t1').css("transition:opacity 2s;opacity:1")
+                    $('.t1').show().addClass('fadeInLeft');
+                } else {
+                    $('.t1').removeClass('fadeInLeft');
+                }
+                var sh = $(window).scrollTop();
+                if (sh > 1000) {
+                    $('.t2').addClass('fadeInRight');
+                } else {
+                    $('.t2').removeClass('fadeInRight');
+                }
+                var sh = $(window).scrollTop(); //取的目前視窗以捲動的距離
+                if (sh > 1500) {
+                    console.log(sh);
+                    $('.line').addClass('line1');
+                    
+
+                } else {
+                    $('.line').removeClass('line1');
+                }
+                var sh = $(window).scrollTop(); //取的目前視窗以捲動的距離
+                if (sh > 2000) {
+
+                    $('.line2').addClass('line2_1');
+
+                } else {
+                    $('.line2').removeClass('line2_1');
+                }
+                var sh = $(window).scrollTop(); //取的目前視窗以捲動的距離
+                if (sh > 2700) {
+
+                    $('.line3').addClass('line3_1');
+
+                } else {
+                    $('.line3').removeClass('line3_1');
+                }
+                var sh = $(window).scrollTop(); //取的目前視窗以捲動的距離
+                if (sh > 3500) {
+
+                    $('.line4').addClass('line4_1');
+
+                } else {
+                    $('.line4').removeClass('line4_1');
+                }
+                var sh = $(window).scrollTop(); //取的目前視窗以捲動的距離
+                if (sh > 3900) {
+
+                    $('.line5').addClass('line5_1');
+
+                } else {
+                    $('.line5').removeClass('line5_1');
+                }
+
+
+
+
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="bg2">
+        <div class="bg">
+
+            <div class="container-fluid">
+                <div class="nav">
+                    <div class="navleft">
+                        <div class="img1">
+                            <img width="120" height="48" src="protfolio logo.png">
+                        </div>
+                    </div>
+                    <div class="navright">
+
+                        <a class="btn" data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <img src="./menu.png" width="35" height="35">
+                        </a>
+
+                    </div>
+                    <div class="collapse w-100" id="collapseExample">
+                        <div class="card card-body cardright">
+                            <a href="P_home.html" style="font-weight:bold">Home</a>
+                            <a href="About_me.html" style="font-weight:bold">About me</a>
+                            <a style="font-weight:bold">Works</a>
+                            <a href="Representative.html">Representative Work</a>
+                            <a href="/P_VA.html">Video X Animation</a>
+                            <a href="/P_PA.html">Package</a>
+                            <a href="/P_PH.html">Graphic Design</a>
+                            <a href="/P_WE.html">Web Design</a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <ul class="list">
+                            <li><a href="./P_home.html">Home</a></li>
+
+                            <li>
+                                <a href="#">Works</a>
+                            </li>
+                            <ul class="center">
+                                <li><a href="Representative.html">Representative Work</a></li>
+                                <li><a href="P_VA.html">Video X Animation</a></li>
+                                <li><a href="P_PA.html">Package</a></li>
+                                <li><a href="P_PH.html">Graphic Design</a></li>
+                                <li><a href="P_WE.html">Web Design</a></li>
+                            </ul>
+
+                            <li><a href="About_me.html">About me</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header">
+                    <span class="banner_t">
+                        GRAPHIC
+                    </span>
+                </div>
+                <div class="container maincard">
+                    <div class="row">
+                        <div class="title col-12 mb-5 text-center t1">
+                            <div class="liner"></div>LOGO Design<div class="liner"></div>
+                        </div>
+                        <div class="col-xl-3 card1 col-lg-12 text-center mb-5">
+                            <img src="/p_images/painapplelogo.png" width="150px">
+                            <h3>鳳鮮鳳梨酥</h3>
+                            <p>以鳳梨的簡化結構來製造字體的整體設定，以直角表現鳳梨的銳利，以圓角來表現鳳梨的活潑感；鮮字上的水滴來表現鳳梨鮮嫩多汁。</p>
+                        </div>
+                        <div class="col-xl-3 card1 col-lg-12 text-center mb-5">
+                            <img src="/p_images/goodtoeat.png" width="150px">
+                            <h3>真好吃車輪餅</h3>
+                            <p>以車輪餅的外型來做延伸設計，轉變成太陽表現活潑童趣感；使用美味的表情來表現該品牌
+                                「真好吃」的精神。</p>
+                        </div>
+                        <div class="col-xl-3 card1 col-lg-12 text-center mb-5">
+                            <img src="/p_images/moon.png" width="150px">
+                            <h3>富寶衛生棉</h3>
+                            <p>中間的圓球代表該產品強調的美白精華，以月亮與星星表現女性的陰柔再加上簡化的手型來代表溫柔守護的意象。</p>
+                        </div>
+                        <div class="col-xl-3 card1 col-lg-12 text-center mb-5">
+                            <img src="/p_images/mregg.png" width="150px">
+                            <h3>雞蛋糕先生</h3>
+                            <p>利用雞蛋外型與該品牌的名稱「雞蛋糕先生」做logo設計，一方面能表示性別，一方面也能表現活潑感。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container maincard1 cad">
+                    <div class="row">
+                        <div class="title col-12 mb-5 text-center mt-5 t2">
+                            <div class="liner"></div>POSTER DESIGN<div class="liner"></div>
+                        </div>
+
+                        <div class="col-12 card2 text-center mb-5">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="circle">1</div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="col-3 my-auto t2">
+                                    <h3>GEORG JENSEN</h3>
+                                </div>
+                                <div class="col-3">
+                                    <img src="/p_images/watch.jpg" >
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card2 col-12 text-center mb-5">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="circle">2</div>
+                                    <div class="line2"></div>
+                                </div>
+                                <div class="col-3 my-auto t2">
+                                    <h3>Answer Tea activity poster</h3>
+                                </div>
+                                <div class="col-3">
+                                    <img src="/p_images/tran_m.jpg" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card2 col-12 text-center mb-5">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="circle">3</div>
+                                    <div class="line3"></div>
+                                </div>
+                                <div class="col-3 my-auto t2">
+                                    <h3>Answer Tea <br>New drink</h3>
+                                </div>
+                                <div class="col-3">
+                                    <img src="/p_images/caramel.jpg" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card2 col-12 text-center mb-5 thin">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="circle">4</div>
+                                    <div class="line4"></div>
+                                </div>
+                                <div class="col-3 my-auto">
+                                    <h3>超現實空間</h3>
+                                </div>
+                                <div class="col-6 mx-auto">
+                                    <img src="/p_images/block-01.png" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card2 col-12 text-center mb-5">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="circle">5</div>
+                                    <div class="line5"></div>
+                                </div>
+                                <div class="col-3 my-auto">
+                                    <h3>萬花筒纏繞畫</h3>
+                                </div>
+                                <div class="col-3">
+                                    <img src="/p_images/IMAG0015.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<div lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="VA.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Merriweather|Montserrat:100,100i,200,200i,300,300i,400,400i,500,600,700,800,900,900i|Parisienne|Quicksand|Satisfy&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/a18f7de081.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        </script>
+        <title>Hungjiawu's web site</title>
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery-1.12.3.min.js"></script>
+        <script>
+            $('document').ready(function () {
+                $('ul.list ul').hide();
+
+                $('ul.list > li > a').click(function () {
+                    console.log($('ul.center'));
+                    if ($('ul.center').is(':hidden')) {
+                        $('ul.center').slideDown(600);
+                    } else {
+                        $('ul.center').slideUp(600);
+                    }
+
+                    //$(this).next().slideToggle(800);
+                    //$(this).toggleClass('active');
+                });
+                $('.btn').click(function () {
+                    console.log($('#collapseExample'));
+                    $('#collapseExample').removeClass('collapsing');
+
+
+                });
+                // $('.maina.t').click(function () {
+                //     $('html,body').animate({
+                //         scrollTop: 0
+                //     }, 900);
+                // });
+                $(window).scroll(function () { //視窗捲動的時候
+
+                    var sh = $(window).scrollTop(); //取的目前視窗以捲動的距離
+                    console.log(sh);
+
+                    if (sh > 1300) {
+                        $('.maina h2').fadeIn();
+                        $('.maina h3').fadeIn();
+                        $('.maina p').fadeIn();
+                        
+                    } else {
+                        $('.maina h2').fadeOut();
+                        $('.maina h3').fadeOut();
+                        $('.maina p').fadeOut();
+                    }
+                });
+                $(window).scroll(function () { //視窗捲動的時候
+
+                    var sh = $(window).scrollTop(); //取的目前視窗以捲動的距離
+                    if (sh > 2300) {
+                        $('.mainb h2').fadeIn();
+                        $('.mainb h3').fadeIn();
+                        $('.mainb p').fadeIn();
+                        
+                    } else {
+                        $('.mainb h2').fadeOut();
+                        $('.mainb h3').fadeOut();
+                        $('.mainb p').fadeOut();
+                    }
+                });
+                $(window).scroll(function () { //視窗捲動的時候
+
+                    var sh = $(window).scrollTop(); //取的目前視窗以捲動的距離
+                    if (sh > 2800) {
+                        $('.mainc h2').fadeIn();
+                        $('.mainc h3').fadeIn();
+                        $('.mainc p').fadeIn();
+                        
+                    } else {
+                        $('.mainc h2').fadeOut();
+                        $('.mainc h3').fadeOut();
+                        $('.mainc p').fadeOut();
+                    }
+                });
+
+            });
+        </script>
+
+    </head>
+    <div class="bg2">
+        <div class="bg">
+
+            <div class="container-fluid">
+                <div class="nav">
+                    <div class="navleft">
+                        <div class="img1">
+                            <img width="120" height="48" src="./protfolio logo.png">
+                        </div>
+                    </div>
+                    <div class="navright">
+
+                        <a class="btn" data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <img src="./menu.png" width="35" height="35">
+                        </a>
+
+                    </div>
+                    <div class="collapse w-100" id="collapseExample">
+                        <div class="card card-body cardright">
+                            <a href="./P_home.html" style="font-weight:bold">Home</a>
+                            <a href="./About_me.html" style="font-weight:bold">About me</a>
+                            <a style="font-weight:bold">Works</a>
+                            <a href="Representative.html">Representative Work</a>
+                            <a href="P_VA.html">Video X Animation</a>
+                            <a href="P_PA.html">Package</a>
+                            <a href="P_PH.html">Graphic Design</a>
+                            <a href="P_WE.html">Web Design</a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <ul class="list">
+                            <li><a href="./P_home.html">Home</a></li>
+
+                            <li>
+                                <a href="#">Works</a>
+                            </li>
+                            <ul class="center">
+                                <li><a href="Representative.html">Representative Work</a></li>
+                                <li><a href="P_VA.html">Video X Animation</a></li>
+                                <li><a href="P_PA.html">Package</a></li>
+                                <li><a href="P_PH.html">Graphic Design</a></li>
+                                <li><a href="P_WE.html">Web Design</a></li>
+                            </ul>
+
+                            <li><a href="./About_me.html">About me</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header">
+                    <span class="banner_t">
+                        Video Animation
+                    </span>
+                </div>
+
+                <div class="container mb-8 cad">
+                    <div class="row">
+
+                        <div class="c-1 bg-yellow col-xl-3 mr-xl-5 mb-5 mb-xl-0 text-center bg-a">
+                            <i class="fas fa-air-freshener"></i>
+                            <h3>BLANDIT QUIS CURAE</h3>
+                            <p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing
+                                accumsan ac nunc tincidunt lobortis.</p>
+                        </div>
+                        <div class="c-1 bg-yellow col-xl-3 mr-xl-5 mb-5 mb-xl-0 text-center bg-b">
+                            <i class="fas fa-air-freshener"></i>
+                            <h3>BLANDIT QUIS CURAE</h3>
+                            <p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing
+                                accumsan ac nunc tincidunt lobortis.</p>
+                        </div>
+                        <div class="c-1 bg-yellow col-xl-3  text-center bg-c">
+                            <i class="fas fa-air-freshener"></i>
+                            <h3>BLANDIT QUIS CURAE</h3>
+                            <p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing
+                                accumsan ac nunc tincidunt lobortis.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container-fluid align-items-center maina">
+                    <div class="skew1 w-100"></div>
+                    <div class="container position-r-2">
+                        <div class="row">
+                            <div class="col-xl-1"></div>
+                            <div class="t col-xl-4 col-12 mr-8">
+                                <h2>EROS 產品形象影片</h2>
+                                <h3>形象片主要想營造迷幻感</h3><br>
+                                <p>表現使用者在使用中能感受產品給予的上妝愉悅感，使用後能脫離大眾既定的審美，表現出最美、最獨特、最有自信的自我。</p>
+                            </div>
+                            <!-- <div class="col-xl-1"></div> -->
+                            <div class="video col-xl-5 col-12 my-auto">
+                                <iframe width="500" height="267" src="https://www.youtube.com/embed/h8a5flYK4QU"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="col-xl-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mainb">
+                    <div class="skew2 w-100"></div>
+                    <div class="container position-r-4">
+                        <div class="row">
+                            <div class="col-xl-1"></div>
+                            <div class="t  col-12  t-md-none">
+                                <h2>Glam Glow glitter mask <br>緊緻星光面膜</h2>
+                                <p>因緣際會下，製作了這部產品介紹影片，想跳脫一般產品的介紹說明，研究了很多這個品牌的產品、感受之差異。</p><br>
+                                <p>對消費者對於該產品的疑惑做解答，挑出最重點的效果與成分，讓觀眾能直接了解產品並引起對產品的興趣。</p>
+                            </div>
+                            <div class="video col-xl-5 col-12 my-auto">
+                                <iframe width="500" height="267" src="https://www.youtube.com/embed/3urutoMUdvg"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="col-xl-1"></div>
+
+                            <div class="t col-xl-4 col-12 t-xs-none ml-8">
+                                <h2>Glam Glow <br>glitter mask <br>緊緻星光面膜</h2>
+                                <p>因緣際會下，製作了這部產品介紹影片，想跳脫一般產品的介紹說明，研究了很多該品牌的產品、感受差異。</p><br>
+                                <p>對消費者對於該產品的疑惑做解答，挑出最重點的效果與成分，讓觀眾能直接了解產品並引起對產品的興趣。</p>
+                            </div>
+                            <div class="col-xl-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mainc">
+                    <div class="skew3 w-100"></div>
+                    <div class="container position-r-6">
+                        <div class="row">
+                            <div class="col-xl-1"></div>
+                            <div class="t col-xl-4 col-12 mr-6">
+                                <h2>富堡衛生棉行銷廣告</h2>
+                                <p>運用水蜜桃的特性，來代表女性的私密處，水蜜桃不僅能表達嫩白，也能表現柔嫩不生菌的感覺。</p class="mb-5"><br>
+                                <p>背景時空從白天到黑夜，從一開始使用他牌的衛生棉，水蜜桃暗沉並有快壞掉的感覺，到富堡衛生棉出現，來改善暗沉滋生細菌的問題。</p>
+                                <br>
+                                <p>並使水蜜桃淨白柔嫩，再出現兩項最重要的成分，草本與美白精華，加以說明，隨著日夜與環境的變化代表不管日夜，富堡都會一直陪伴守護每一位女孩。</p>
+                            </div>
+                            <!-- <div class="col-xl-1"></div> -->
+                            <div class="video col-xl-5 col-12 my-auto">
+                                <iframe width="500" height="267" src="https://www.youtube.com/embed/Kdu0WM0zH_g"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <!-- <div class="col-xl-1"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</div>

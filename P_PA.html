@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="PA.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Merriweather|Montserrat:100,100i,200,200i,300,300i,400,400i,500,600,700,800,900,900i|Parisienne|Quicksand|Satisfy&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/a18f7de081.js" crossorigin="anonymous"></script>    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        </script>
+        <title>Hungjiawu's web site</title>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery-1.12.3.min.js"></script>
+        <script>
+            $('document').ready(function () {
+                $('ul.list ul').hide();
+
+                $('ul.list > li > a').click(function () {
+                    console.log($('ul.center'));
+                    if ($('ul.center').is(':hidden')) {
+                        $('ul.center').slideDown(600);
+                    } else {
+                        $('ul.center').slideUp(600);
+                    }
+
+                    //$(this).next().slideToggle(800);
+                    //$(this).toggleClass('active');
+                });
+                $('.btn').click(function () {
+                    console.log($('#collapseExample'));
+                    $('#collapseExample').removeClass('collapsing');
+
+
+                });
+
+                $('.main.card1').click(function () {
+                    $('html,body').animate({
+                        scrollTop: 0
+                    }, 900);
+                });
+
+
+                $(window).scroll(function () { //視窗捲動的時候
+
+
+                    var sh = $(window).scrollTop(); //取的目前視窗以捲動的距離
+                    if (sh > 1100) {
+                        console.log(sh);
+                        $('.main .aa').addClass('animated animatedFadeInUp fadeInUp');
+                        $('.main .card1').addClass('card1_1');
+                    } else {
+                        $('.main .card1').removeClass('card1_1');
+                        $('.main .aa').removeClass('animated animatedFadeInUp fadeInUp');
+                        
+
+
+
+                    }
+                    var sh = $(window).scrollTop(); //取的目前視窗以捲動的距離
+                    if (sh > 2600) {
+                        console.log(sh);
+                        $('.main .bb').addClass('animated animatedFadeInUp fadeInUp');
+                        $('.main .card2').addClass('card1_1');
+                    } else {
+                        $('.main .card2').removeClass('card1_1');
+                        $('.main .bb').removeClass('animated animatedFadeInUp fadeInUp');
+                        
+
+
+
+                    }
+                    var sh = $(window).scrollTop(); //取的目前視窗以捲動的距離
+                    if (sh > 4200) {
+                        console.log(sh);
+                        $('.main .cc').addClass('animated animatedFadeInUp fadeInUp');
+                        $('.main .card3').addClass('card1_1');
+                    } else {
+                        $('.main .card3').removeClass('card1_1');
+                        $('.main .cc').removeClass('animated animatedFadeInUp fadeInUp');
+                        
+
+
+
+                    }
+                });
+
+            });
+        </script>
+
+    </head>
+
+    <body>
+        <div class="bg2">
+            <div class="bg">
+            
+                <div class="container-fluid">
+                    <div class="nav">
+                        <div class="navleft">
+                            <div class="img1">
+                                <img width="120" height="48" src="./protfolio logo.png">
+                            </div>
+                        </div>
+                        <div class="navright">
+
+                            <a class="btn" data-toggle="collapse" href="#collapseExample" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <img src="./menu.png" width="35" height="35">
+                            </a>
+
+                        </div>
+                        <div class="collapse w-100" id="collapseExample">
+                            <div class="card card-body cardright">
+                                <a href="P_home.html" style="font-weight:bold">Home</a>
+                                <a href="About_me.html" style="font-weight:bold">About me</a>
+                                <a style="font-weight:bold">Works</a>
+                                <a href="Representative.html">Representative Work</a>
+                                <a href="/P_VA.html">Video X Animation</a>
+                                <a href="/P_PA.html">Package</a>
+                                <a href="#">Graphic Design</a>
+                                <a href="#">Web Design</a>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <ul class="list">
+                                <li><a href="./P_home.html">Home</a></li>
+
+                                <li>
+                                    <a href="#">Works</a>
+                                </li>
+                                <ul class="center">
+                                    <li><a href="Representative.html">Representative Work</a></li>
+                                    <li><a href="/P_VA.html">Video X Animation</a></li>
+                                    <li><a href="P_PA.html">Package</a></li>
+                                    <li><a href="#">Graphic Design</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                </ul>
+
+                                <li><a href="./About_me.html">About me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header">
+                        <span class="banner_t">
+                            PACKAGING
+                        </span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                    <div class="line4"></div>
+                    <div class="main container-fluid">
+                        <div class="row">
+                            <div class="img-swap w-100 aa">
+                                <img class="mx-auto col-12 img4" src="p_images/2020119_200119_0005.jpg" width="">
+                                <img class="mx-auto col-12 " src="p_images/2020119_1.png">
+                            </div>
+                            <div class="p-8">
+                                <div class="row">
+
+                                    <div class="card1 bg-pink col-lg-5 col-xl-2 mb-md-5 mr-6">
+                                        <h2 class="mt-78">Laneige<br>Gift set</h2>
+                                    </div>
+
+                                    <div class="card1 bg-pink col-lg-5 mx-xl-5 col-xl-2 mb-md-5">
+                                        <h2><i class="far fa-lightbulb"></i><br>創意來源</h2>
+                                        <span>新鮮<br>突破<br>天然<br>美味<br> 愉快</span>
+                                    </div>
+                                    <div class="card1 bg-pink col-lg-5 p-5 mr-xl-5 col-xl-4 mb-md-5 mr-6">
+                                        <h2><i class="fas fa-paint-brush"></i><br>設計概念</h2>
+                                        <span class="text-justify">以溫室為發想，希望消費者在食用的時候可以感受到鳳梨酥內餡的新鮮感，每一顆都像從土裡拿出。<br>
+                                            鳳鮮又有鳳仙的意思，代表每個鳳梨酥都住著鳳梨仙子來保持它的新鮮度。</span>
+                                    </div>
+                                    <div class="card1 bg-pink col-lg-5 col-xl-2 mb-md-5">
+                                        <h2><i class="fas fa-palette"></i><br>調性質感</h2>
+                                        <span>新鮮感 <br>梯形<br>色彩豐富<br>自然感</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main container-fluid">
+                        <div class="row">
+                            <div class="img-swap bb ">
+                                <img class="mx-auto col-12 img4" src="p_images/S__5685428.jpg">
+                                <img class="mx-auto col-12 " src="p_images/painapple_1.png">
+                            </div>
+                            <div class="p-8">
+                                <div class="row">
+                                    <div class="card2 bg-pink col-lg-5 col-xl-2 mb-md-5 mr-6">
+                                        <h2 class="mt-78">鳳鮮<br>鳳梨酥</h2>
+                                    </div>
+                                    <div class="card2 bg-pink col-lg-5 mx-xl-5 col-xl-2 mb-md-5">
+                                        <h2><i class="far fa-lightbulb"></i><br>創意來源</h2>
+                                        <span>新鮮<br>突破<br>天然<br>美味<br> 愉快</span>
+                                    </div>
+                                    <div class="card2 bg-pink col-lg-5 p-5 mr-xl-5 col-xl-4 mb-md-5 mr-6">
+                                        <h2><i class="fas fa-paint-brush"></i><br>設計概念</h2>
+                                        <span class="text-center">以溫室為發想，希望消費者在食用的時候可以感受到鳳梨酥內餡的新鮮感，每一顆都像從土裡拿出。<br>
+                                            鳳鮮又有鳳仙的意思，代表每個鳳梨酥都住著鳳梨仙子來保持它的新鮮度。</span>
+                                    </div>
+                                    <div class="card2 bg-pink col-lg-5 col-xl-2 mb-md-5">
+                                        <h2><i class="fas fa-palette"></i><br>調性質感</h2>
+                                        <span>新鮮感 <br>梯形<br>色彩豐富<br>自然感</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main container-fluid ">
+                        <div class="row">
+                            <div class="img-swap w-100 cc">
+                                <img class="mx-auto col-md-12 img4" src="p_images/HippoCrate.jpg">
+                                <img class="mx-auto col-md-12" src="p_images/bean.png">
+                            </div>
+                            <div class="p-8">
+                                <div class="row">
+                                    <div class="card3 bg-pink col-lg-5 col-xl-2 mb-md-5 mr-6">
+                                        <h2 class="mt-78">一個人<br>古早甜點</h2>
+                                    </div>
+                                    <div class="card3 bg-pink col-lg-5 mx-xl-5 col-xl-2 mb-md-5">
+                                        <h2><i class="far fa-lightbulb"></i><br>創意來源</h2>
+                                        <span>巧思<br>天然<br>美味<br>方便<br>懷念<br>分享</span>
+                                    </div>
+                                    <div class="card3 bg-pink col-lg-5 p-5 mr-xl-5 col-xl-4 mb-md-5 mr-6">
+                                        <h2><i class="fas fa-paint-brush"></i><br>設計概念</h2>
+                                        <span
+                                            class="text-center">為獨自生活的人設計，可以自行烹煮一人份的家鄉味小點心，內附糖包與定量的綠豆、紅豆、薏仁，避免平常生活忙碌的人想吃小點心卻又煮太多吃不完的狀況。</span>
+                                    </div>
+                                    <div class="card3 bg-pink col-lg-5 col-xl-2 mb-md-5">
+                                        <h2><i class="fas fa-palette"></i><br>調性質感</h2>
+                                        <span>純樸感<br>溫暖<br>復古色調<br>愉快<br></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>

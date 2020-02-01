@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="About_me.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Merriweather|Montserrat:100,100i,200,200i,300,300i,400,400i,500,600,700,800,900,900i|Parisienne|Quicksand|Satisfy&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <title>Hungjiawu's web-About me</title>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('ul.list ul').hide();
+
+            $('ul.list > li > a').click(function () {
+                console.log($('ul.center'));
+                if ($('ul.center').is(':hidden')) {
+                    $('ul.center').slideDown(600);
+                } else {
+                    $('ul.center').slideUp(600);
+                }
+
+                //$(this).next().slideToggle(800);
+                //$(this).toggleClass('active');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class=" container-fluid nav">
+        <div class="navleft">
+            <div class="img1">
+                <img width="120" height="48" src="./protfolio logo.png">
+            </div>
+        </div>
+        <div class="navright">
+
+            <a class="btn d-md-none" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                <img src="./menu.png" width="35" height="35">
+            </a>
+
+        </div>
+        <div class="collapse w-100" id="collapseExample">
+            <div class="card card-body cardright">
+                <a href="./P_home.html" style="font-weight:bold">Home</a>
+                <a href="./About_me.html" style="font-weight:bold">About me</a>
+                <a style="font-weight:bold">Works</a>
+                <a href="./Representative.html">Representative Work</a>
+                <a href="/P_VA.html">Video X Animation</a>
+                <a href="/P_PA.html">Package</a>
+                <a href="/P_PH.html">Graphic Design</a>
+                <a href="/P_WE.html">Web Design</a>
+            </div>
+        </div>
+
+
+        <div>
+            <ul class="list">
+                <li><a href="./P_home.html">Home</a></li>
+
+                <li>
+                    <a href="#">Works</a>
+                </li>
+                <ul class="center">
+                    <li><a href="./Representative.html">Representative Work</a></li>
+                    <li><a href="/P_VA.html">Video X Animation</a></li>
+                    <li><a href="/P_PA.html">Package</a></li>
+                    <li><a href="/P_PH.html">Graphic Design</a></li>
+                    <li><a href="/P_WE.html">Web Design</a></li>
+                </ul>
+
+                <li><a href="./About_me.html">About me</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="row">
+            <div class="header contanier col-3">
+                <div class="meet">
+                    <h4 class="ml-5 mt-5">Hello, nice to meet you!</h4>
+                </div>
+                <div class="gradient"><img src="/p_images/IMG_7296.JPG" width="180px"></div>
+            </div>
+            <div class="maint col-3 ">
+                <h5 class="mtl-8">About me.</h5>
+                <img class="ml-120" src="/p_images/name.png" width="140px">
+                <h6 class="text-right mr-6 text-white contact">Huang Chia ,Wu<br>1996X12X30<br>hungjiawu@gmail.com</h6>
+                <h6 class="point text-right mr-6 mt-3 sc">完美主義 規劃力 毅力 觀察力<br>抗壓力 上進心 領導 責任心</h6>
+                <h6 class="text-white text-right mr-6 mt-3 sc">
+                    善於網頁設計、平面設計<br>2Ｄ動畫、影片剪輯<br>對事情進行規劃<br>對網頁有很大的興趣及熱忱<br>喜歡收集各類質感網站與印刷品<br>不定時學習各類軟體技能、設計時事</h6>
+            </div>
+            <div class="experience col-3 mt-5">
+                <div class="ex1">
+                    <h5 class="extitle text-white">作品經歷</h5>
+                    <img src="/p_images/pinkline.png" height="100px">
+                    <div class="ps-r">
+                        <p class="point pl-3">2018雅詩蘭黛產品介紹影片</p>
+                        <p class="point pl-3">2018答案茶視覺設計</p>
+                    </div>
+                    <h5 class="extitle text-white">個人經歷</h5>
+                    <img src="/p_images/pinkline1.png" height="250px">
+                    <div class="ps-r1">
+                        <p class="text-white pl-3 mb-6 mt-3">2016三系大型活動宿營攝影組</p>
+                        <p class="text-white pl-3 mb-3">2016商業設計系聖誕晚會公關組</p>
+                        <p class="text-white pl-3 mb-6">2017三系大型活動宿營攝影組</p>
+                        <p class="text-white pl-3 mb-3">2018時報金犢獎廣告動畫類</p>
+                        <p class="text-white pl-3 mb-6">2018畢籌會公關長</p>
+                        <p class="text-white pl-3 mb-6">2019時報金犢獎平面廣告類</p>
+                    </div>
+                    <div class="ex2">
+                        <h5 class="extitle text-white">學歷</h5>
+                        <img src="/p_images/pinkline.png" height="100px">
+                        <div class="ps-r">
+                            <p class="text-white pl-3">國立臺中科技大學商業設計系(2015-2019)</p>
+                            <p class="text-white pl-3">國立基隆商工廣告設計科（2012-2015）</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col-3 skill mt-5">
+                <img src="p_images/html.png" width="75px" class="mb-3">
+                <img src="p_images/css.png" width="50px" class="ml-12 mb-3">
+                <img src="p_images/jquery.png" width="80px" class="mb-2">
+                <img src="p_images/Ai.png" width="80px">
+                <img src="p_images/Ps.png" width="80px">
+                <img src="p_images/Ae.png" width="80px">
+                <img src="p_images/Pr.png" width="80px">
+                <img src="p_images/id.png" width="80px">
+                <img src="p_images/fusion.png" width="80px">
+
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

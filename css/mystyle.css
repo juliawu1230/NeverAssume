@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+  }
+  
+.wrap {
+    width:100%;
+    margin:0 auto;/**置中**/
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+position: fixed;
+width: 100%;
+font-size: 24px;
+}
+
+ul:hover {
+background-color:#AC9797;
+}
+
+li {
+float: right;
+}
+
+li a {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color:#CDB6B6;
+}
+
+.dropbtn {
+background-color: #A47C7D;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+    cursor: pointer;}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #D4B1B1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: #875050;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color:#795354;
+}
+.dropbtn {
+background-color: #A47C7D;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+    cursor: pointer;}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #D4B1B1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: #875050;
+padding:12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color:#795354;
+}
+
+header{background-image: url("look1-look1.st.jpg");
+height:auto;
+background-color:#DAB9B9;
+text-align:center;
+
+
+}	
+.div1{
+    padding: 20px;
+}
+nav{
+height:20%;
+background-color:#DED3C9;
+text-align:left;
+text-decoration-color: #B8815E
+}
+
+article{
+width:50%;
+height:30%;
+background-color: #CFC9CA;
+float:left;
+}
+
+aside{
+width:50%;
+height:30%;
+background-color:#F4E2E2;
+float:right;
+}
+footer{
+height:30%;
+background-color:#C0D3E0;
+clear:both;
+}
