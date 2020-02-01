@@ -5,7 +5,7 @@ body{
     margin:0;
     padding: 0;
     font-family: 'Montserrat', sans-serif!important;
-    
+    overflow-x: hidden;
 }
 
 .bg{
@@ -13,7 +13,7 @@ body{
     background-size:100% auto;
     background-repeat: no-repeat;
     z-index: 15;
-    overflow: hidden;
+    
     
 }
 .bg2{
@@ -22,7 +22,7 @@ body{
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in; */
-    overflow: hidden;
+    
 
 }
 

@@ -8,13 +8,16 @@ html{
 body{
     margin:0px;
     font-family: 'Montserrat', sans-serif!important;
+    overflow-x: hidden;
     
   
 }
+
 .bg{
     background-image:url(./header_4.png);
     background-size:100% auto;
     background-repeat: no-repeat;
+    
 }
 .bg2{
     /* background: linear-gradient(#e9934b,#dfa33c,#8cb151, #62c9a5,#2b2b98); */
@@ -22,6 +25,7 @@ body{
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
+    
 
 }
 @keyframes bgc{
@@ -31,6 +35,7 @@ body{
     75% {background-color:#2b2b98;}
     100% {background-color:#e9934b;}
 }
+
 .line{
     border-left:2px solid teal;
     height: 1200px;
