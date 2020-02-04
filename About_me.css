@@ -187,21 +187,7 @@ margin-left: 12px;
         margin-left:150px;
     }
 }
-@media (max-width:375px){
-    .mtl-8{
-        margin-top: 150px;
-        margin-left: 180px;
-    }
-    .ml-120{
-        margin-left:160px;
-    }
-    .ex1{
-        margin-left: 60px;
-    }
-    .skill,.skill img{
-        margin:auto;
-    }
-}
+
 @media (max-width:414px){
     .mtl-8{
         margin-top: 150px;
@@ -212,6 +198,21 @@ margin-left: 12px;
     }
     .ex1{
         margin-left: 50px;
+    }
+    .skill,.skill img{
+        margin:auto;
+    }
+}
+@media (max-width:375px){
+    .mtl-8{
+        margin-top: 150px;
+        margin-left: 180px;
+    }
+    .ml-120{
+        margin-left:160px;
+    }
+    .ex1{
+        margin-left: 60px;
     }
     .skill,.skill img{
         margin:auto;

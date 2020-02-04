@@ -540,6 +540,9 @@ a {
     .minexplain {
         display: none;
     }
+    .title_png{
+        display: none;
+    }
 }
 
 @media (max-width:576px) {
