@@ -3,6 +3,7 @@
 }
 body{
     margin:0px;
+    padding:0 !important;
     background-color: #050321 !important;
     font-family: 'Montserrat', sans-serif !important;
 
@@ -23,7 +24,6 @@ body{
     width:100%;
 }
 .navright{
-    margin-top: 18px;
     margin-left: auto;
 }
 .img{
@@ -169,13 +169,36 @@ margin-left: 12px;
         
     }
     
+    
 }
-@media (max-width:767px) {
+@media (max-width:768px) {
     .list{
         position: absolute;;
         padding: 20px;
         float: right;
         width:100%;
         display:none;
-    }    
+    }  
+    .mtl-8{
+        margin-top: 150px;
+        margin-left: 180px;
+    }
+    .ml-120{
+        margin-left:150px;
+    }
+}
+@media (max-width:375px){
+    .mtl-8{
+        margin-top: 150px;
+        margin-left: 180px;
+    }
+    .ml-120{
+        margin-left:160px;
+    }
+    .ex1{
+        margin-left: 60px;
+    }
+    .skill,.skill img{
+        margin:auto;
+    }
 }
