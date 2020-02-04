@@ -7,7 +7,7 @@ body{
 }
 
 .img6{
-    margin: 0px 20px;
+    margin: 10px 20px;
 }
 
 .w-100{
@@ -224,7 +224,7 @@ a {
 }
 .title-png{
     position: relative;
-    right: -190px;
+    right: -175px;
     top: 20px;
 }
 .pitcure-png{
@@ -442,9 +442,7 @@ text-align: center;
     .t p{
         padding: 20px 50px;
     }
-    .title-png{
-        right:-350px;
-    }
+    
     .eroslogo{
         display: none;
     }
