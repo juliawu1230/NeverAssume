@@ -62,7 +62,7 @@ body{
 }
 
 .img1{
-    margin: 0 20px;
+    margin: 20px 20px;
 }
 
 .w-100{
@@ -349,6 +349,24 @@ h2{
             margin-left:20px ;
         }
 }
+@media (max-width:414px){
+    .header{
+        padding: 150px 0px 50px 0;
+        margin:0;
+        } 
+    .align-items-center {
+    
+            padding-bottom: 100px !important;
+        }
+        .banner_t{
+            font-size: 30px;
+            margin-left:20px;
+    }
+    .card1 img{
+        width:300px;
+    }
+}
+
 @media (max-width:375px){
     .header{
         padding: 150px 0px 50px 0;
