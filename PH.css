@@ -434,6 +434,67 @@ h3{
             margin-left:20px ;
         }
 }
+@media (max-width:414px){
+    .header{
+        padding: 120px 0px 80px 0;
+        margin:0;
+        } 
+    .img1 img{
+        margin-top: 20px;
+        width:120px;
+    }
+    
+    .banner_t{
+        font-size: 30px;
+        margin-left:20px;
+    }
+
+    .title{
+        font-size: 2rem !important;
+    }
+    .maincard1 img{
+        width:180px !important;
+    }
+    .thin img{
+        width:120px !important;
+    }
+    .circle{
+        color:rgb(245, 219, 188);
+        font-size: 0.7rem;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color:#cea169 ;
+    }
+    .t2 h3{
+        font-size: 1rem !important;
+        text-align: left;
+    }
+    .line,.line1,.line2,.line3,.line4,.line5{
+        margin-left: 9px;
+    }
+    .line1{
+        height:100px;
+        transition: height 3s;
+    }
+    .line2_1{
+        height:160px;
+        transition: height 3s;
+    }
+    .line3_1{
+        height:115px;
+        transition: height 3s;
+    }
+    .line4_1{
+        height:320px;
+        transition: height 3s;
+    }
+    .line5_1{
+        height:290px;
+        transition: height 3s;
+    }
+}
+
 @media (max-width:375px){
     .header{
         padding: 120px 0px 80px 0;
@@ -494,3 +555,4 @@ h3{
         transition: height 3s;
     }
 }
+
