@@ -355,7 +355,7 @@ a {
 
 .mimg img {
     width: 80%;
-    margin: 50px;
+    margin: 50px 50px 50px 35px;
 }
 
 .text {
@@ -364,7 +364,7 @@ a {
 }
 
 .text p {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
     font-size: 0.8rem;
     line-height: 36px;
     letter-spacing: 0.2rem;
@@ -372,12 +372,13 @@ a {
 }
 
 .minexplain .text {
-    margin: 0;
+    text-align: left;
+    margin-left: 50px;
+    padding-right: 35px;
+    padding-left: 0;
 }
 
-.minexplain .text {
-    text-align: center;
-}
+
 
 .transform-in,
 .transform-out {
@@ -489,7 +490,12 @@ a {
         margin: 50px 10px;
 
     }
-
+    .slider5 .t{
+        margin-top: 50px;
+    }
+    .slick_slider{
+        display: none !important;
+    }
     .title-png {
         right: -350px;
     }
@@ -498,7 +504,12 @@ a {
         display: none;
     }
 
-
+    .minexplain h2{
+        font-size: 1.6rem;
+    }
+    .minexplain p{
+        font-size: 1rem;
+    }
 }
 
 @media (min-width:769px) {
@@ -528,129 +539,139 @@ a {
 
     .minexplain {
         display: none;
-
-
     }
 }
-    @media (max-width:576px) {
-        .header {
-            padding: 150px 0px 100px 0;
-        }
 
-        .banner_t {
-            font-size: 50px;
-            margin-left: 20px;
-        }
+@media (max-width:576px) {
+    .header {
+        padding: 150px 0px 100px 0;
+    }
+
+    .banner_t {
+        font-size: 50px;
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width:414px) {
+    .img6 img {
+        margin: 20px 10px;
+        width: 80px;
+        height: 32px;
+    }
+
+    a.btn.collapse {
+        padding: 0;
+    }
+
+    .btn img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .header {
+        padding: 90px 0px 80px 0;
+        margin: 0;
+    }
+
+    .align-items-center {
+
+        padding-bottom: 100px !important;
+    }
+
+    .banner_t {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .exsample.img1,
+    .exsample.img2,
+    .exsample.img3 {
+        display: none;
+    }
+
+    .eroslogo img {
+        padding: 0;
+        display: none;
+    }
+
+    .slider5 {
+        padding: 5px;
+        margin: 50px 20px;
+    }
+
+    .slick_slider img {
+        width: 100%;
+        padding: 11px;
+    }
+
+    .title_png {
+        right: -185px;
+        top: 20px;
+    }
+
+    .t p {
+        padding: 0;
+    }
+
+}
+
+@media (max-width:375px) {
+    .img6 img {
+        margin: 10px 10px;
+        width: 80px;
+        height: 32px;
+    }
+
+    a.btn.collapse {
+        padding: 0;
+    }
+
+    .btn img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .header {
+        padding: 90px 0px 80px 0;
+        margin: 0;
+    }
+
+    .banner_t {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .exsample.img1,
+    .exsample.img2,
+    .exsample.img3 {
+        display: none;
+    }
+
+    .eroslogo img {
+        padding: 0;
+    }
+
+    .slider5 {
+        padding: 5px;
+        margin: 50px 20px;
 
     }
 
-    @media (max-width:414px) {
-        .img6 img {
-            margin: 20px 10px;
-            width: 80px;
-            height: 32px;
-        }
-
-        a.btn.collapse {
-            padding: 0;
-        }
-
-        .btn img {
-            width: 25px;
-            height: 25px;
-        }
-
-        .header {
-            padding: 90px 0px 80px 0;
-            margin: 0;
-        }
-
-        .align-items-center {
-
-            padding-bottom: 100px !important;
-        }
-
-        .banner_t {
-            font-size: 30px;
-            margin-left: 20px;
-        }
-
-        .exsample.img1,.exsample.img2,.exsample.img3{
-            display: none;
-        }
-
-        .eroslogo img {
-            padding: 0;
-            display: none;
-        }
-
-        .slider5 {
-            padding: 5px;
-            margin: 50px 20px;
-        }
-
-        .slick_slider img {
-            width: 100%;
-            padding: 11px;
-        }
-
-        .title_png {
-            right: -160px;
-            top: 20px;
-        }
-
-        .t p {
-            padding: 0;
-        }
-
+    .slick_slider img {
+        padding: 10px !important;
     }
 
-    @media (max-width:375px) {
-        .img6 img {
-            margin: 10px 10px;
-            width: 80px;
-            height: 32px;
-        }
-
-        a.btn.collapse {
-            padding: 0;
-        }
-
-        .btn img {
-            width: 25px;
-            height: 25px;
-        }
-
-        .header {
-            padding: 90px 0px 80px 0;
-            margin: 0;
-        }
-
-        .banner_t {
-            font-size: 30px;
-            margin-left: 20px;
-        }
-
-        .exsample.img1,.exsample.img2,.exsample.img3{
-            display: none;
-        }
-
-        .eroslogo img {
-            padding: 0;
-        }
-
-        .slider5 {
-            padding: 5px;
-            margin: 50px 20px;
-
-        }
-
-        .slick_slider img {
-            padding: 10px !important;
-        }
-
-        .t p {
-            padding: 0;
-        }
-
+    .t p {
+        padding: 0;
     }
+    .text p{
+        padding-right: 40px;
+    }
+    .title_png {
+        right: -160px;
+        top: 20px;
+    }
+    
+}

@@ -202,3 +202,18 @@ margin-left: 12px;
         margin:auto;
     }
 }
+@media (max-width:414px){
+    .mtl-8{
+        margin-top: 150px;
+        margin-left: 225px;
+    }
+    .ml-120{
+        margin-left:200px;
+    }
+    .ex1{
+        margin-left: 50px;
+    }
+    .skill,.skill img{
+        margin:auto;
+    }
+}
