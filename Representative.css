@@ -196,6 +196,41 @@ a {
     z-index:100 ;
     
 }
+.minimg1{
+    width:30%;
+    position: relative;
+    right: 15px; 
+    bottom:0px;
+    transition:bottom 1s,right 1s;
+    z-index:102 ;
+    
+}
+.minimg2{
+    width:41%;
+    position: relative;
+    right: -20px; 
+    bottom:0px;
+    transition:bottom 1.5s,right 1.5s;
+    
+}
+.minimg3{
+    width:62.24%;
+    position: relative;
+    right: -60px; 
+    bottom:0px;
+    transition:bottom 2s,right 2s;
+    z-index:100 ;
+    
+}
+.title-png{
+    position: relative;
+    right: -190px;
+    top: 20px;
+}
+.pitcure-png{
+    position: relative;
+    top: 50px;
+}
 .pa{
     position: absolute;
 }
@@ -300,6 +335,12 @@ a {
     letter-spacing: 0.2rem;
     
 }
+.minexplain .text{
+    margin: 0;
+}
+.minexplain .text{
+text-align: center;
+}
 .transform-in, .transform-out {
     display:block;
     -webkit-transition:all ease 0.5s;
@@ -401,6 +442,13 @@ a {
     .t p{
         padding: 20px 50px;
     }
+    .title-png{
+        right:-350px;
+    }
+    .eroslogo{
+        display: none;
+    }
+    
    
 }
 
@@ -419,6 +467,11 @@ a {
     .btn{
         display: none !important;
     }
+    .minimg1,.minimg2,.minimg3,.title-png,.pitcure-png{
+        display: none;
+    }
+    .minexplain{
+        display: none;
     
     
 }
@@ -432,7 +485,7 @@ a {
         }
         
 }
-@media (max-width:375px){
+@media (max-width:414px){
     .img6 img{
         margin: 20px 10px;
         width:80px;
@@ -459,10 +512,52 @@ a {
     }
     .eroslogo img{
         padding:0;
+        display: none;
     }
     .slider5{
         padding:5px;
-        margin:50px 50px;
+        margin:50px 20px;
+        
+    }
+    .slick_slider img{
+        width:100%;
+        padding:11px;
+    }
+    .t p{
+        padding:0;
+    }
+
+}
+@media (max-width:375px){
+    .img6 img{
+        margin: 20px 10px;
+        width:80px;
+        height:32px;
+    }
+    a.btn.collapse{
+        padding:0;
+    }
+    .btn img{
+        width:25px;
+        height:25px;
+    }
+    .header{
+        padding: 90px 0px 80px 0;
+        margin:0;
+        } 
+    .align-items-center {
+            padding-bottom: 100px !important;
+        }
+        .banner_t{
+            font-size: 30px;
+            margin-left:20px;
+    }
+    .eroslogo img{
+        padding:0;
+    }
+    .slider5{
+        padding:5px;
+        margin:50px 20px;
         
     }
     .slick_slider img{
