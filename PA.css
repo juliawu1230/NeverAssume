@@ -8,7 +8,7 @@ html{
 body{
     margin:0px;
     font-family: 'Montserrat', sans-serif!important;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     
   
 }

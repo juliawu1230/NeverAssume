@@ -1,19 +1,21 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
-    margin:0px;
+
+body {
+    margin: 0px;
     font-family: 'Montserrat', sans-serif !important;
 }
 
-.img6{
+.img6 {
     margin: 10px 20px;
 }
 
-.w-100{
-    width:100%;
+.w-100 {
+    width: 100%;
 }
-.nav{
+
+.nav {
     padding: 12px 16px;
     display: flex;
     position: absolute;
@@ -21,29 +23,32 @@ body{
     z-index: 501;
     justify-content: space-between;
 }
-.navright{
+
+.navright {
     margin-top: 18px;
     margin-left: auto;
 }
-.img{
+
+.img {
     float: left;
 }
 
 
 
-ul{
+ul {
     list-style: none;
     padding: 0;
     display: flex;
 }
-li{
+
+li {
     /* width:250px; */
     line-height: 42px;
     text-align: center;
 
 }
 
-.collapsing a{
+.collapsing a {
     color: #30336b !important;
     text-decoration: none !important;
     font-size: 20px;
@@ -51,17 +56,18 @@ li{
     padding: 10px 20px;
 
 }
+
 .collapse a {
     color: #30336b !important;
     padding: 10px 20px;
     text-decoration: none !important;
-    
+
     font-size: 20px;
     line-height: 42px;
-    
+
 }
 
-.list a{
+.list a {
     color: floralwhite !important;
     font-size: 20px;
     line-height: 42px;
@@ -69,200 +75,222 @@ li{
 }
 
 
-ul ul a{
+ul ul a {
     color: floralwhite;
-    
+
 }
-ul ul a:hover{
-    background-color: rgb(255, 255, 255,0.3);
+
+ul ul a:hover {
+    background-color: rgb(255, 255, 255, 0.3);
 }
-.center{
+
+.center {
     flex-direction: column;
     position: absolute;
     transform: translate3d(30px, 40px, 0px);
 }
 
-a:hover{
-    color:#d98b99 !important;
+a:hover {
+    color: #d98b99 !important;
     text-decoration: none !important;
 }
-.work{
+
+.work {
     -webkit-font-smoothing: antialiased;
 }
-.cardright{
+
+.cardright {
     display: flex;
     justify-content: flex-start;
 }
+
 a {
     color: floralwhite !important;
     padding: 10px 20px;
     text-decoration: none !important;
-    
+
     font-size: 20px;
     line-height: 42px;
-    
+
 }
-.container-fluid{
+
+.container-fluid {
     padding: 0 !important;
 }
-.row{
+
+.row {
     margin: 0% !important;
-    
+
 }
-.header{
+
+.header {
     width: 100%;
     color: azure;
     margin-bottom: 100px;
     padding: 650px 0px 200px 0;
-    
 
-    
+
+
 }
-.center{
+
+.center {
     flex-direction: column;
     position: absolute;
     transform: translate3d(30px, 40px, 0px);
 }
 
 
-.exsample{
-    padding:0 30px;
+.exsample {
+    padding: 0 30px;
     overflow: hidden;
-    width:100%;
-    background: linear-gradient(311deg,#02081f,#02081f,#f3afbc,#02081f,#02081f) !important;
-    
-}  
+    width: 100%;
+    background: linear-gradient(311deg, #02081f, #02081f, #f3afbc, #02081f, #02081f) !important;
 
-.hes{
+}
+
+.hes {
     position: absolute;
     z-index: 500;
 }
 
-.img1{
+.img1 {
     animation-timing-function: ease-out;
-    width:30%;
+    width: 30%;
     position: relative;
-    right: -355px; 
-    bottom:355px;
-    transition:bottom 1s,right 1s;
-    z-index:100 ;
-    
-    
-}
-    
-.img2{
-    animation-timing-function: ease-out;
-    transition:bottom 1.5s,right 1.5s;
-    position: relative;
-    width:41%;
-    right: -700px; 
-    bottom: 590px;
-    z-index: 101;
-    
+    right: -355px;
+    bottom: 355px;
+    transition: bottom 1s, right 1s;
+    z-index: 100;
+
+
 }
 
-.img3{
+.img2 {
     animation-timing-function: ease-out;
-    transition:bottom 2s,right 2s;
+    transition: bottom 1.5s, right 1.5s;
     position: relative;
-    width:62.24%;
-    right: -905px; 
-    bottom:705px;
+    width: 41%;
+    right: -700px;
+    bottom: 590px;
+    z-index: 101;
+
+}
+
+.img3 {
+    animation-timing-function: ease-out;
+    transition: bottom 2s, right 2s;
+    position: relative;
+    width: 62.24%;
+    right: -905px;
+    bottom: 705px;
     z-index: 102;
 }
 
-.img1_slide{
+.img1_slide {
     position: relative;
-    right: 0px; 
-    bottom:0px;
-    transition:bottom 1s,right 1s;
-    z-index:102 ;
-    
+    right: 0px;
+    bottom: 0px;
+    transition: bottom 1s, right 1s;
+    z-index: 102;
+
 }
-.img2_slide{
-    
+
+.img2_slide {
+
     position: relative;
-    right: -100px; 
-    bottom:0px;
-    transition:bottom 1.5s,right 1.5s;
-    
+    right: -100px;
+    bottom: 0px;
+    transition: bottom 1.5s, right 1.5s;
+
 }
-.img3_slide{
-    
+
+.img3_slide {
+
     position: relative;
-    right: -200px; 
-    bottom:0px;
-    transition:bottom 2s,right 2s;
-    z-index:100 ;
-    
+    right: -200px;
+    bottom: 0px;
+    transition: bottom 2s, right 2s;
+    z-index: 100;
+
 }
-.minimg1{
-    width:30%;
+
+.minimg1 {
+    width: 30%;
     position: relative;
-    right: 15px; 
-    bottom:0px;
-    transition:bottom 1s,right 1s;
-    z-index:102 ;
-    
+    right: 15px;
+    bottom: 0px;
+    transition: bottom 1s, right 1s;
+    z-index: 102;
+
 }
-.minimg2{
-    width:41%;
+
+.minimg2 {
+    width: 41%;
     position: relative;
-    right: -20px; 
-    bottom:0px;
-    transition:bottom 1.5s,right 1.5s;
-    
+    right: -20px;
+    bottom: 0px;
+    transition: bottom 1.5s, right 1.5s;
+
 }
-.minimg3{
-    width:62.24%;
+
+.minimg3 {
+    width: 62.24%;
     position: relative;
-    right: -60px; 
-    bottom:0px;
-    transition:bottom 2s,right 2s;
-    z-index:100 ;
-    
+    right: -60px;
+    bottom: 0px;
+    transition: bottom 2s, right 2s;
+    z-index: 100;
+
 }
-.title-png{
+
+.title-png {
     position: relative;
     right: -175px;
     top: 20px;
 }
-.pitcure-png{
+
+.pitcure-png {
     position: relative;
     top: 50px;
 }
-.pa{
+
+.pa {
     position: absolute;
 }
-.p0{
-    padding:0;
+
+.p0 {
+    padding: 0;
 }
-.m0{
+
+.m0 {
     margin: 0;
 }
-.slider5{
-    padding:100px;
-    margin:30px 100px;
-    
-}
-.slick_slider{
-    margin:auto;
-}
-.slick_slider img{
-    width:100%;
-    padding:20px;
+
+.slider5 {
+    padding: 100px;
+    margin: 30px 100px;
+
 }
 
-.eroslogo img{
-    width:65%;
+.slick_slider {
+    margin: auto;
+}
+
+.slick_slider img {
+    width: 100%;
+    padding: 20px;
+}
+
+.eroslogo img {
+    width: 65%;
     float: right;
-    padding:50px;
+    padding: 50px;
     padding-top: 0;
-    
-    
+
+
 }
 
-.t p{
+.t p {
     color: #fff;
     padding: 20px 208px;
     text-align: center;
@@ -271,7 +299,7 @@ a {
     line-height: 30px;
 }
 
-.slider_caption{
+.slider_caption {
     position: absolute;
     bottom: 10px;
     min-width: 355px;
@@ -279,28 +307,30 @@ a {
     color: #fff;
     text-align: center;
     background-color: rgba(3, 10, 33, 0.5);
-    
+
 }
-.slider_caption a{
+
+.slider_caption a {
     cursor: pointer;
 }
-.active{
+
+.active {
     position: relative;
 }
 
 
 
-.quickview{
+.quickview {
     background-color: rgba(3, 10, 33, 0.5);
     height: 1000px;
     z-index: 680;
-    padding:100px 200px;
+    padding: 100px 200px;
     position: absolute !important;
     top: 2800px;
 }
 
-.qvset{
-    background-color: rgba(3, 10, 33,1);
+.qvset {
+    background-color: rgba(3, 10, 33, 1);
     border: 1px solid #fff;
     border-radius: 20px;
     display: flex;
@@ -309,44 +339,54 @@ a {
     justify-content: space-between;
     z-index: 700;
 }
-.qvset i{
-    color:#fff;
+
+.qvset i {
+    color: #fff;
     font-size: 2rem;
     float: right;
-    margin:10px 15px;
+    margin: 10px 15px;
     transition: transform 0.6s;
 }
-.qvset i>i:hover{
-    transform:rotate(90deg);
-    
+
+.qvset i>i:hover {
+    transform: rotate(90deg);
+
 }
-.mimg img{
-    width:80%;
-    margin:50px;
+
+.mimg img {
+    width: 80%;
+    margin: 50px;
 }
-.text{
-    color:#fff;
+
+.text {
+    color: #fff;
     margin: 50px 50px 50px 0;
 }
-.text p{
+
+.text p {
     font-size: 1.2rem !important;
     font-size: 0.8rem;
     line-height: 36px;
     letter-spacing: 0.2rem;
-    
+
 }
-.minexplain .text{
+
+.minexplain .text {
     margin: 0;
 }
-.minexplain .text{
-text-align: center;
+
+.minexplain .text {
+    text-align: center;
 }
-.transform-in, .transform-out {
-    display:block;
-    -webkit-transition:all ease 0.5s;
-    transition:all ease 0.5s;
-  }
-  @media (min-width:1201px) {
+
+.transform-in,
+.transform-out {
+    display: block;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+@media (min-width:1201px) {
     .d-md-none {
         color: #30336b;
         margin: 10px 20px;
@@ -354,98 +394,111 @@ text-align: center;
         font-weight: bold;
         float: right;
         font-size: 20px;
-        display:none;
-    }
-    .t-md-none{
         display: none;
-       
     }
-    
-    .header{
+
+    .t-md-none {
+        display: none;
+
+    }
+
+    .header {
         margin-bottom: 100px;
     }
-    
-    .mr-6{
+
+    .mr-6 {
         margin-right: 20px;
     }
-    .mr-8{
+
+    .mr-8 {
         margin-right: 40px;
     }
-    
+
 }
 
 @media (max-width:1200px) {
-    .header{
+    .header {
         padding: 150px 0px 350px 0;
     }
-    
-   
-    .t-xs-none{
-        display:none;
-        
+
+
+    .t-xs-none {
+        display: none;
+
     }
-    .slider5{
-        padding:50px;
-        margin:150px 50px;
-        
+
+    .slider5 {
+        padding: 50px;
+        margin: 150px 50px;
+
     }
-    .t p{
+
+    .t p {
         padding: 20px 100px;
     }
-    
-    
+
+
 }
-@media (max-width:992px){
-    .header{
-    padding: 150px 0px 300px 0;
+
+@media (max-width:992px) {
+    .header {
+        padding: 150px 0px 300px 0;
     }
-    .banner_t{
+
+    .banner_t {
         font-size: 90px;
     }
-    .t p{
+
+    .t p {
         padding: 20px 10px;
     }
 }
 
-@media (max-width:768px){
-    .fnav{
-        position: absolute;;
+@media (max-width:768px) {
+    .fnav {
+        position: absolute;
+        ;
         padding: 20px;
         float: right;
-        width:100%;
-        display:none;
-    }  
-    
-    .nav{
-        padding:0;
+        width: 100%;
+        display: none;
     }
-    
-    .banner_t{
+
+    .nav {
+        padding: 0;
+    }
+
+    .banner_t {
         font-size: 70px;
     }
-    .header{
+
+    .header {
         padding: 150px 0px 250px 0;
-        } 
-    
-    .list{
+    }
+
+    .list {
         position: absolute;
         padding: 20px;
         float: right;
-        width:100%;
-        display:none;
-    }    
-    .slider5{
-        padding:10px;
-        margin:50px 10px;
-        
-    }
-    
-    
-    .eroslogo{
+        width: 100%;
         display: none;
     }
-    
-   
+
+    .slider5 {
+        padding: 10px;
+        margin: 50px 10px;
+
+    }
+
+    .title-png {
+        right: -350px;
+    }
+
+    .eroslogo {
+        display: none;
+    }
+
+
 }
 
 @media (min-width:769px) {
@@ -456,122 +509,148 @@ text-align: center;
         font-weight: bold;
         float: right;
         font-size: 20px;
-        display:none;
-        
-        
+        display: none;
+
+
     }
-    .btn{
+
+    .btn {
         display: none !important;
     }
-    .minimg1,.minimg2,.minimg3,.title-png,.pitcure-png{
+
+    .minimg1,
+    .minimg2,
+    .minimg3,
+    .title-png,
+    .pitcure-png {
         display: none;
     }
-    .minexplain{
+
+    .minexplain {
         display: none;
-    
-    
+
+
+    }
 }
-@media (max-width:576px) {
-    .header{
-        padding: 150px 0px 100px 0;
-        } 
-        .banner_t{
-            font-size: 50px;
-            margin-left:20px ;
+    @media (max-width:576px) {
+        .header {
+            padding: 150px 0px 100px 0;
         }
-        
-}
-@media (max-width:414px){
-    .img6 img{
-        margin: 20px 10px;
-        width:80px;
-        height:32px;
+
+        .banner_t {
+            font-size: 50px;
+            margin-left: 20px;
+        }
+
     }
-    a.btn.collapse{
-        padding:0;
-    }
-    .btn img{
-        width:25px;
-        height:25px;
-    }
-    .header{
-        padding: 90px 0px 80px 0;
-        margin:0;
-        } 
-    .align-items-center {
-    
+
+    @media (max-width:414px) {
+        .img6 img {
+            margin: 20px 10px;
+            width: 80px;
+            height: 32px;
+        }
+
+        a.btn.collapse {
+            padding: 0;
+        }
+
+        .btn img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .header {
+            padding: 90px 0px 80px 0;
+            margin: 0;
+        }
+
+        .align-items-center {
+
             padding-bottom: 100px !important;
         }
-        .banner_t{
+
+        .banner_t {
             font-size: 30px;
-            margin-left:20px;
-    }
-    .eroslogo img{
-        padding:0;
-        display: none;
-    }
-    .slider5{
-        padding:5px;
-        margin:50px 20px;
-        
-    }
-    .slick_slider img{
-        width:100%;
-        padding:11px;
-    }
-    .t p{
-        padding:0;
+            margin-left: 20px;
+        }
+
+        .exsample.img1,.exsample.img2,.exsample.img3{
+            display: none;
+        }
+
+        .eroslogo img {
+            padding: 0;
+            display: none;
+        }
+
+        .slider5 {
+            padding: 5px;
+            margin: 50px 20px;
+        }
+
+        .slick_slider img {
+            width: 100%;
+            padding: 11px;
+        }
+
+        .title_png {
+            right: -160px;
+            top: 20px;
+        }
+
+        .t p {
+            padding: 0;
+        }
+
     }
 
-}
-@media (max-width:375px){
-    .img6 img{
-        margin: 20px 10px;
-        width:80px;
-        height:32px;
-    }
-    a.btn.collapse{
-        padding:0;
-    }
-    .btn img{
-        width:25px;
-        height:25px;
-    }
-    .header{
-        padding: 90px 0px 80px 0;
-        margin:0;
-        } 
-    
-        .banner_t{
+    @media (max-width:375px) {
+        .img6 img {
+            margin: 10px 10px;
+            width: 80px;
+            height: 32px;
+        }
+
+        a.btn.collapse {
+            padding: 0;
+        }
+
+        .btn img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .header {
+            padding: 90px 0px 80px 0;
+            margin: 0;
+        }
+
+        .banner_t {
             font-size: 30px;
-            margin-left:20px;
+            margin-left: 20px;
+        }
+
+        .exsample.img1,.exsample.img2,.exsample.img3{
+            display: none;
+        }
+
+        .eroslogo img {
+            padding: 0;
+        }
+
+        .slider5 {
+            padding: 5px;
+            margin: 50px 20px;
+
+        }
+
+        .slick_slider img {
+            padding: 10px !important;
+        }
+
+        .t p {
+            padding: 0;
+        }
+
     }
-    .eroslogo img{
-        padding:0;
-    }
-    .slider5{
-        padding:5px;
-        margin:50px 20px;
-        
-    }
-    .slick_slider img{
-        padding:10px !important;
-    }
-    .t p{
-        padding:0;
-    }
-
-}
-  
-
-
-
-
-
-
-
-
-
-
-   
-

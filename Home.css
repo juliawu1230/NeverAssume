@@ -4,6 +4,7 @@
 body{
     margin:0px;
     font-family: 'Montserrat', sans-serif !important;
+    background: azure;
 
 }
 .bg{
@@ -156,7 +157,6 @@ span{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        color: azure;
         padding:200px;
         /* background-image: url(./protfolio_header.png); */
         
@@ -231,7 +231,7 @@ span{
         font-size: 30px;
     }
     .header{
-        padding:150px 80px;
+        padding:282px 80px;
     }
     .header img{
         width:230px;
@@ -242,7 +242,7 @@ span{
         font-size: 30px;
     }
     .header{
-        padding:150px 80px;
+        padding:282px 80px;
     }
     .header img{
         width:200px;
