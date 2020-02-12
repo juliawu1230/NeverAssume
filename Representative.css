@@ -301,8 +301,8 @@ a {
 
 .slider_caption {
     position: absolute;
-    bottom: 10px;
-    min-width: 355px;
+    bottom: 13px;
+    min-width: 90%;
     transform: translate3d(20px, -7px, 10px);
     color: #fff;
     text-align: center;
@@ -324,9 +324,9 @@ a {
     background-color: rgba(3, 10, 33, 0.5);
     height: 1000px;
     z-index: 680;
-    padding: 100px 200px;
+    padding: 150px 200px;
     position: absolute !important;
-    top: 2800px;
+    top: 1738px;
 }
 
 .qvset {
