@@ -510,6 +510,21 @@ a {
     .minexplain p{
         font-size: 1rem;
     }
+   
+    .minimg1{
+        right:-350px;
+    }
+    .minimg2{
+        right:-380px;
+    }
+    .minimg3{
+        right:-410px;
+    }
+    .img1,
+    .img2,
+    .img3 {
+        display: none !important;
+    }
 }
 
 @media (min-width:769px) {
@@ -543,6 +558,7 @@ a {
     .title_png{
         display: none;
     }
+    
 }
 
 @media (max-width:576px) {
@@ -617,6 +633,15 @@ a {
 
     .minexplain p{
         padding-right: 55px;
+    }
+    .minimg1{
+        right:15px;
+    }
+    .minimg2{
+        right:-20px;
+    }
+    .minimg3{
+        right:-60px;
     }
 }
 
