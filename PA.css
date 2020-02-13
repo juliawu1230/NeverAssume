@@ -473,10 +473,6 @@ h2 i{
 
 @media (max-width:768px){
     .fnav{
-        position: absolute;;
-        padding: 20px;
-        float: right;
-        width:100%;
         display:none;
     }  
     
@@ -545,6 +541,15 @@ h2 i{
 @media (max-width:414px){
     .line3 ,.line1,.line4{
         display:none;
+    }
+    .main img{
+        padding:0 50px;
+    }
+    .p-8{
+        padding:20px 50px;
+    }
+    .line2{
+        margin-right:0;
     }
 }
 @media (max-width:375px){

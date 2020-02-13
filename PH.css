@@ -363,7 +363,9 @@ h3{
     .nav{
         padding:0;
     }
-    
+    .img1{
+        margin:20px;
+    }
     .banner_t{
         font-size: 70px;
     }
@@ -436,11 +438,11 @@ h3{
 }
 @media (max-width:414px){
     .header{
-        padding: 120px 0px 80px 0;
+        padding: 140px 0px 80px 0;
         margin:0;
         } 
-    .img1 img{
-        margin-top: 20px;
+    .img1{
+        margin:20px;
         width:120px;
     }
     
@@ -500,8 +502,8 @@ h3{
         padding: 120px 0px 80px 0;
         margin:0;
         } 
-    .img1 img{
-        margin-top: 20px;
+    .img1{
+        margin:20px;
         width:120px;
     }
     

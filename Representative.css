@@ -496,8 +496,9 @@ a {
     .slick_slider{
         display: none !important;
     }
-    .title-png {
+    .title_png {
         right: -350px;
+        margin-top:30px;
     }
 
     .eroslogo {
@@ -510,20 +511,25 @@ a {
     .minexplain p{
         font-size: 1rem;
     }
-   
+   .mimg img{
+    margin: 50px 70px;
+   }
+   .minexplain .text {
+    margin-left: 90px;
+    }
     .minimg1{
-        right:-350px;
+        right:15px;
     }
     .minimg2{
-        right:-380px;
+        right:-20px;
     }
     .minimg3{
-        right:-410px;
-    }
+        right:-60px;
+    }   
     .img1,
     .img2,
     .img3 {
-        display: none !important;
+        display: none;
     }
 }
 
@@ -601,11 +607,11 @@ a {
         margin-left: 20px;
     }
 
-    .exsample.img1,
+    /* .exsample.img1,
     .exsample.img2,
     .exsample.img3 {
         display: none;
-    }
+    } */
 
     .eroslogo img {
         padding: 0;
@@ -630,6 +636,15 @@ a {
     .t p {
         padding: 0;
     }
+    .title_png {
+        margin-top:0px;
+    }
+    .mimg img{
+        margin: 50px 40px;
+       }
+       .minexplain .text {
+        margin-left: 60px;
+        }
 
     .minexplain p{
         padding-right: 55px;
@@ -701,5 +716,11 @@ a {
         right: -160px;
         top: 20px;
     }
+    .mimg img{
+        margin: 50px 30px;
+       }
+       .minexplain .text {
+        margin-left: 50px;
+        }
     
 }
