@@ -46,11 +46,13 @@ li{
     text-align: center;
 
 }
+.collapse{
+    z-index: 1035;
+}
 .collapse a {
     color: #30336b !important;
     padding: 10px 20px;
     text-decoration: none !important;
-    
     font-size: 20px;
     line-height: 42px;
     
@@ -162,6 +164,7 @@ a:hover{
 .skill{
     display: flex;
     flex-direction: column;
+    z-index: -1;
 }
 .ml-12{
 margin-left: 12px;
