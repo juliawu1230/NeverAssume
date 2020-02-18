@@ -8,21 +8,15 @@ body{
 }
 
 .bg{
-    background-image:url(./header_4.png);
+    background-image:url(./header_light.png);
     background-size:100% auto;
     background-repeat: no-repeat;
 }
 .bg2{
-    background: linear-gradient(311deg,#e4af85,#f5c9a5,#fa4465, #482ea8,#02081f);
-    /* animation-name:bgc ;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in; */
-
+    background: rgb(255, 240, 211);
 }
 .nav{
     display: flex;
-    /* position: fixed; */
     width: 100%;
     justify-content: space-between;
 }
@@ -34,6 +28,7 @@ body{
 .w-100{
     width:100%;
 }
+
 .nav{
     padding: 12px 16px;
     display: flex;
@@ -42,23 +37,24 @@ body{
     z-index: 501;
     justify-content: space-between;
 }
+
 .navright{
     margin-top: 18px;
     margin-left: auto;
 }
+
 .img{
     float: left;
 }
-
-
 
 ul{
     list-style: none;
     padding: 0;
     display: flex;
 }
+
 li{
-    /* width:250px; */
+    
     line-height: 42px;
     text-align: center;
 
@@ -83,7 +79,7 @@ li{
 }
 
 .list a{
-    color: floralwhite !important;
+    color: #bc9272 !important;
     transition: color 0.5s;
     font-size: 20px;
     line-height: 42px;
@@ -105,7 +101,7 @@ ul ul a:hover{
 }
 
 a:hover{
-    color:#fbca2b !important;
+    color:white !important;
     transition: color 0.5s;
     text-decoration: none !important;
 }
@@ -140,7 +136,7 @@ h2{
     font-size: 120px;
     
     font-weight: bolder;
-    color: #fbca2b;
+    color: #bc9272;
 }
 
 .maincard.row{
