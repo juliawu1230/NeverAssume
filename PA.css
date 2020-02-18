@@ -399,7 +399,37 @@ h2 i{
     -webkit-animation-name: fadeInUp;
 }
 
+.footer{
+    margin-top:50px;
+    border-top: 2px solid teal;
+    padding: 30px 0;
+    color:white;
+}
 
+.footer p{
+    margin:10px 0;
+}
+
+.footer .title{
+    font-weight:600;
+    font-size:20px;
+}
+
+.footer i{
+    font-size: 1.3rem;
+    color:teal;
+}
+.input{
+    border: none;
+    background: none;
+    border-bottom: teal 1px solid;
+    height: 13px;
+    margin-left: 10px;
+}
+
+.input:focus{
+    outline: none;
+}
 
 
 

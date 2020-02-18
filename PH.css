@@ -271,26 +271,65 @@ h3{
     height:380px;
     transition: height 3s;
 }
+
 .line2_1{
     height:560px;
     transition: height 3s;
 }
+
 .line3_1{
     height:405px;
     transition: height 3s;
 }
+
 .line4_1{
     height:650px;
     transition: height 3s;
 }
+
 .line5_1{
     height:990px;
     transition: height 3s;
 }
+
+.footer{
+    margin-top:50px;
+    border-top: 2px solid #bc9272;
+    padding: 30px 0;
+    color:#bc9272;
+}
+
+.footer p{
+    margin:10px 0;
+}
+
+.footer .title1{
+    font-weight:600;
+    font-size:20px;
+}
+
+.footer i{
+    font-size: 1.3rem;
+    color:#bc9272;
+}
+.input{
+    border: none;
+    background: none;
+    border-bottom: #bc9272 1px solid;
+    height: 13px;
+    margin-left: 10px;
+}
+
+.input:focus{
+    outline: none;
+}
+
 @keyframes rotate {
     from {transform: rotateY(0deg)}
     to {transform: rotateY(360deg)}
   }
+
+
 @media (min-width:1201px) {
     .d-md-none {
         color: #30336b;
